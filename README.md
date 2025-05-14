@@ -40,3 +40,8 @@ the images. By default, it will use the image dev-fedora41. If you wish to chang
 to change the corresponding line in the configuration file `.devcontainer/devcontainer.json`.
 We reccomment to have already pulled the image before opening the repository in the devcontainer, so that
 you will not have it built locally (this build will take a few minutes of 100% CPU time). 
+
+## Python setup in the container
+
+If you are using the image with python, you can set it up with poetry in the container. 
+You can 
