@@ -2,7 +2,7 @@
 
 - MARTY repository: https://github.com/docbrown1955/marty-public
 - MARTY website: https://marty.in2p3.fr/
-- Darkpack repository: https://github.com/marco-palmiotto/darkpack-cmake
+- Darkpack repository: https://github.com/marco-palmiotto/darkpack-cmake-public
 - Dockerhub:
   - Dev: https://hub.docker.com/repository/docker/marcopalmiotto/darkpack-dev/general
   - Scan: https://hub.docker.com/repository/docker/marcopalmiotto/darkpack-scan/general
