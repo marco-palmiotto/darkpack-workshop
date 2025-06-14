@@ -118,8 +118,8 @@ Let us now open and go trough the file...
 
 Before going on with the library generation, we can 
 ```bash
-mv src/dp_scalar2to2  dp_scalar2to2_back
-rm -rf src/scalar2to2
+mv src/dp_scalar2to2  dp_scalar2to2_back && \
+rm -rf src/scalar2to2 && \
 cd src/models
 ```
 to remove the previosly generated libraries, associated with this model.
@@ -148,6 +148,10 @@ the features. By comparing its content to `src/dp_scalar2to2`, you can check whi
 files have been added. Now we can comment these files.
 
 Let us now open and go trough the files `src/dp_scalar2to2/leshouchesfrommaty.hpp/.cpp`
+```bash
+cd ../.. && \
+cp dp_scalar2to2_back/leshouchesfrommarty.* src/dp_scalar2to2/
+```
 
 # Library usage
 
@@ -171,8 +175,8 @@ It is documented in the `README.md` file in the same directory.
 In the root folder we can quiclky look the `configure.sh` file, to check the options, 
 and then run 
 ```bash
-rm -rf build
-./configure.sh
+rm -rf build 
+./configure.sh  && \
 ninja -C build
 ```
 This will clean the build directory, recreate it with the specified compilation options, 
